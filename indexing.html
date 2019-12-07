@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styling.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:bold&display=swap" rel="stylesheet"> 
 
 <header>J•o•t•N•e•t</header>
 
@@ -16,16 +17,16 @@
 <button onclick="toggle()">Theme</button>
 <button onclick="info()">Info</button>
 <button onclick="save()">Save</button>
-<button>Share</button>
+<button onclick="sending()">Share</button>
 <button onclick="clearing()">Clear</button>
 </div>
 </div>
 
 <div id='ins'>
-<p>
+<p id='para'>
 		Type content,<br><br>
-		Copy, paste from Internet,<br><br> 
-		Save it as a .text file,<br><br>
+		Cut, copy, paste from Internet,<br><br> 
+		Save it as a .txt file,<br><br>
 		Send mail and share it<br><br>
 </p>
 <button onclick="home()">Close</button>
@@ -35,6 +36,8 @@
 <footer>ThejeshwarAB&copy</footer>
 
 <script type="text/javascript" src="scripting.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
 </body>
 </html>
