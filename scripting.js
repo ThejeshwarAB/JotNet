@@ -16,7 +16,7 @@ function home()
 
 function save()
 {
-    	
+
         const text = document.getElementById("textarea");
         let data = text.value;
         if (data!= "")
@@ -41,10 +41,15 @@ function save()
 
 function clearing()
 {
+	let text = document.getElementById("textarea").value;
+	let data = text.value;
+	if (text!= "")
+	{
 	var t = prompt("Do you want to clear the text?(Y/N)");
 	if (t == "Y" || t == "y")
 	{
 		document.getElementById("textarea").value="";
+	}
 	}
 }
 
