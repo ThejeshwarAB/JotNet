@@ -4,7 +4,7 @@ const express = require('express');
 var bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 
 
@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/process_post', function (req, response) {
-    // Prepare output in JSON format  
+    // Prepare output in JSON format
     console.log(req.body);
 
 
@@ -28,17 +28,17 @@ app.post('/process_post', function (req, response) {
         service: 'gmail',
 
         auth: {
-            user: 'nuser3899@gmail.com', //email address to send from
+            user: 'nuser3899@gmail.com', // Email address to send from
             pass: '123.user',
 
         }
     })
 
     var mailOptions = {
-        from: 'User <nuser3899@gmail.com>',
-        to: 'abibastheja@gmail.com',
-        subject: 'Nodemailer test',
-        text: 'Yeah, this is working!!'
+        from: 'JotNet <nuser3899@gmail.com>',
+        to: req.body.mail,
+        subject: req.body.subject,
+        text:  req.body.text
     }
 
     transporter.sendMail(mailOptions, function (err, res) {
@@ -49,7 +49,7 @@ app.post('/process_post', function (req, response) {
         } else {
             console.log('Email Sent');
 
-            response.send('success');
+            response.send('Mail sent!');
         }
     })
 

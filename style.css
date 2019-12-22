@@ -1,0 +1,198 @@
+*{
+	font: 30px Cardo;
+	font: 30px Alegreya;
+	font: 30px Source Serif Pro;
+	font-weight: 700;
+	margin: 0;
+	color: #000;
+	user-select: none;
+	border-radius: 12.5px;
+	max-height: 100%;
+	/*background-blend-mode: hard-light;*/
+	/*overflow: hidden;*/
+}
+
+#content{
+	color: #000;
+	background: #fff;
+	margin: 0px auto;
+	display: inline-table;
+	position: sticky;
+	display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+	align-content: center;
+}
+#content.after textarea{
+	color: #fff;
+	background: #646464;
+}
+#content.after html{
+	background-color: #A9A9A9;
+}
+#content.after + button{
+	color: #000;
+	background: #000;
+}
+#ins{
+	position: fixed;
+	/*width: 500px;
+	height: 400px;*/
+	width: 45%;
+	height: 55%;
+	padding: 20px;
+	z-index: 10;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	text-align: center;
+	color: #fff;
+	line-height: 0.75em;
+	border-radius: 12px;
+	/*background-image: url("blacksilverpic.jpg");*/
+	background-image: url("abs.jpg");
+	border: 2.5px groove silver;
+	background-color: rgba(255,255,255,1);
+	/*background-blend-mode: overlay;*/
+	transform: scale(0);
+	transition: all 1000ms linear;
+}
+#ins button{
+	background: #fff;
+}
+#p{
+	margin: 0px auto;
+}
+#ins.after{
+	display: block;
+	margin: auto;
+	opacity: 1;
+	z-index: 0;
+/*	background-blend-mode: overlay;*/
+	transform: scale(1);
+	transition: all 1000ms linear;
+}
+#button{
+	text-align: center;
+	margin: 0px 100px 0px 100px;
+	margin: 0 auto;
+}
+/*textarea{
+  	top: 10vh;
+  	bottom: 10vh;
+  	height: 615px;
+  	width: 100%;
+  	height: 100%;
+  	position: relative;
+}*/
+
+header{
+	position: fixed;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 2px 12px 0px 0px #000;
+	/*background-image: url("blacksilverpic.jpg");*/
+	background-image: url("abs.jpg");
+	border-bottom: 2.5px groove silver;
+	top: 0;
+}
+
+footer{
+	position: fixed;
+	text-align: center;
+	font-size: 20px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*background-image: url("blacksilverpic.jpg");*/
+	background-image: url("abs.jpg");
+	border-top: 2.5px groove silver;
+	bottom: 0;
+}
+
+textarea{
+	margin-left: auto;
+	margin-right: auto;
+	/*border-radius: 10px;*/
+	/*position: fixed;*/
+	cursor: text;
+	/*width: 75%;*/
+	/*right: width-1100px;*/
+	overflow: auto;
+	text-align: justify-all;
+	font-size: 25px;
+	width: 80%;
+	/*height: 600px;*/
+	height: 70%;
+	resize: none;
+	align-content: center;
+	line-height: 1.25em;
+	padding: 10px;
+	user-select: all;
+	border: none;
+	border-color: transparent;
+	background: #eee;
+	color: #000;
+	top: 15vh;
+  	bottom: 15vh;
+  	margin: 0 auto;
+}
+
+button{
+/*	display: inline-block;*/
+/*	position: fixed;*/
+    /*flex-direction: reverse-row;*/
+    justify-content: center;
+    align-items: center;
+	align-content: center;
+	font-size: 15px;
+	padding: 20px;
+	text-align: center;
+	background: transparent;
+	color: #A9A9A9;
+	border: none;
+	border-color: transparent;
+	margin: auto;
+}
+
+#textarea{
+/*	display: inline-block;*/
+	position: fixed;
+	margin: 0 auto;
+	margin-right: auto;
+}
+
+#ins, #p{
+	text-align: center;
+}
+
+/*@media only screen and (min-width: 667px)
+{
+
+	*{
+	font: 20px Source Serif Pro;
+	font-weight: 700;
+	margin: 0;
+	color: #000;
+	user-select: none;
+	border-radius: 12.5px;
+	max-height: 100%;
+	line-height: 1.25em;
+	}
+	button{
+		padding: 10px;
+	}
+}*/
