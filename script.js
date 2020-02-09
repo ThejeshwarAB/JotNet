@@ -56,7 +56,7 @@ function sending() {
     var subject = prompt("Enter subject:");
 
     console.log(message);
-    $.post("https://jotnet.herokuapp.com/process_post",
+    $.post("https://jotnet.herokuapp.com/",
         {
             text: message,
             mail: mail,
